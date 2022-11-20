@@ -90,7 +90,7 @@ header{
 
 }
 .card-number p{
-    font-size: 18px;
+    font-size: 15px;
     color: hsl(0, 0%, 100%);
     letter-spacing: .25em;
     word-spacing: .5em;
@@ -285,6 +285,10 @@ form{
         margin-left:20% ;
         margin-top: 0;
         /* border: 1px #000 solid; */
+
+    }
+    .profiles{
+        top: 40px;
 
     }
     .hero{
