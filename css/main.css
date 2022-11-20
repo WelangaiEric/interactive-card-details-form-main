@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    /* border: 2px rgb(0, 239, 32) solid; */
+
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+   
+}
+header{
+    width:100vw;
+    height: 220px;
+    background-image: url(../images/bg-main-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    
+
+
+}
+.card-front{
+    position: absolute;
+    width:310px;
+    height:210px ;
+    top: 45%;
+    left: 2%;
+    border-radius: 8px;
+    background-image: url(../images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+
+}
+.card-info{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    /* border: 2px white solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.profiles{
+    width: 90%;
+    height: 60px;
+    /* border: 2px white solid; */
+    position: absolute;
+    top: 25px;
+    display: flex;
+    align-items: center;
+
+}
+.bigCircle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    /* border: 2px white solid; */
+
+}
+.smallCircle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 1px hsl(0, 0%, 100%) solid;
+}
+.card-number{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    /* border: 2px white solid; */
+
+}
+.card-number p{
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: .25em;
+    word-spacing: .5em;
+}
+.card-holder{
+    width: 90%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top:75%;
+
+}
+.card-holder p{
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+}
+.card-holder p:nth-child(2){
+    margin-right: 10px;
+}
+.card-back{
+    position: absolute;
+    width: 310px;
+    height:210px ;
+    top: 1%;
+    left: 12%;
+    border-radius: 8px;
+    background-image: url(../images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+
+}
+
+.inme{
+    width: 100%;
+    height:40px;
+    position: relative;
+
+}
+.inme p{
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    text-align: right;
+    top: -1%;
+    left: 82%;
+    font-size: 12px;
+}
+.container{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px rgb(0, 239, 32) solid; */
+    
+    justify-content: center;
+    align-items: center;
+    margin-top:60px ;
+
+}
+form{
+    width: 90%;
+    margin-top: 20px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 2px rgb(235, 67, 67) solid; */
+
+}
+.formLable{
+    padding: 10px 10px 10px 0;
+
+}
+.inputField{
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    border: hsl(270, 3%, 87%) 1px solid;
+    text-indent: 10px;
+    font-size: 18px;
+    
+
+
+}
+.inputField:focus{
+    outline: none;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg,hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
+    border-image-slice: 1;
+    border-radius: 10px; 
+    -webkit-mask:
+     linear-gradient(45deg,hsl(249, 99%, 64%) , hsl(278, 94%, 30%))padding-box,
+     linear-gradient(45deg,hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
+     
+}
+
+.flex{
+    width: 90%;
+   
+    margin-top: 10px;
+
+}
+.final{
+    width: 90%;
+    /* border: #000 solid; */
+}
+.final p{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+
+}
+.cant1{
+    display: none;
+}
+.cant2{
+    display: none;
+}
+
+
+
+.date{
+    width: 25%;
+    height: 50px;
+    border-radius: 8px;
+    border: hsl(270, 3%, 87%) 1px solid;
+    text-align: center;
+    font-size: 18px;
+}
+.cvc{
+    width:43% ;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: hsl(270, 3%, 87%) 1px solid;
+    text-align: center;
+    font-size: 18px;
+
+}
+.cvcLable{
+    margin-left: 55px;
+    
+}
+.form{
+    max-width: 90%;
+    /* display: none; */
+    
+}
+.error-msg{
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    display: none;
+}
+
+.btn{
+    margin-top: 20px;
+    height: 50px;
+    width:90%;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    border: 0;
+    background-color: hsl(278, 68%, 11%);
+    font-size: 18px;
+}
+.confirmation{
+    min-width: 60%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.attribution{
+    margin-top: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .container{
+        /* width: 50%; */
+        height: 100vh;
+        margin-left:20% ;
+        margin-top: 0;
+        /* border: 1px #000 solid; */
+
+    }
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-back{
+        width: 300PX;
+        height: 240px;
+        top: 50%;
+        left: 35%;
+    }
+    .card-front{
+        width: 300PX;
+        height: 240px;
+        top: 21%;
+        left: 25%;
+    }
+    header{
+        /* border: 1px #000 solid; */
+        width:550px ;
+        min-height: 100vh;
+        background-image: url(../images/bg-main-desktop.png);
+        background-size: 100vh;
+
+    }
+    .final p{
+        width: 66%;
+    }
+}
+@media screen and (min-width:992px) {
+    /* .container{
+      margin-left:10% ;
+    } */
+    header{
+        width: 800px;
+    }
+    .card-back{
+        width: 350px;
+        height: 240px;
+        top: 50%;
+        left: 55%;
+        
+    }
+    .card-front{
+        width: 350px;
+        height: 240px;
+        top: 18%;
+        left: 45%;
+    }
+    .cvcLable{
+        margin-left: 28%;
+        font-size: 18px;
+    }
+    .cvc{
+        width: 44%;
+    }
+}
+
